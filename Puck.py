@@ -12,20 +12,16 @@ def setup():
     
 if __name__ == "__main__":
 
-    #setup()
-    pca = ServoKit(channels=16)
+    setup()
 
     while True:
-       # pca.servo[P.LEFT_MOTOR_PIN].angle = 180
-        #pca.servo[1].angle = 180
-        pca.continuous_servo[P.LEFT_MOTOR_PIN].throttle = 1
-        pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = 1
+        SU.pca_driveMotors(pca, P.FORWARD, P.FORWARD)
         time.sleep(3)
-        pca.continuous_servo[P.LEFT_MOTOR_PIN].throttle = -1
-        pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = -1
+        SU.pca_driveMotors(pca, P.BACKWARD, P.BACKWARD)
         time.sleep(3)
-        #pca.servo[P.LEFT_MOTOR_PIN].angle = 0
-        #pca.servo[1].angle = 0
-        pca.continuous_servo[P.LEFT_MOTOR_PIN].throttle = 0
-        pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = 0
+        SU.pca_driveMotors(pca, P.FORWARD, P.BACKWARD)
+        time.sleep(3)
+        SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
+        time.sleep(3)
+        SU.pca_driveMotors(pca, P.STOP, P.STOP)
         time.sleep(3)
