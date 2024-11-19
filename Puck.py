@@ -1,6 +1,7 @@
 import time
 import Servo_Utility as SU
 import Parameters as P
+import RPi.GPIO as GPIO
 #import Ultrasonic_Utility as UU
 
 from adafruit_servokit import ServoKit
