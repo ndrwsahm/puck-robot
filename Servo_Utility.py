@@ -17,9 +17,9 @@ Outputs
 pca  :  double  :  handle for the pca motor controller
 ==========================================================================
 """
-def get_pca_handle(void):
+def get_pca_handle():
 
-    pca = ServoKit(channels=16, address=0x40)
+    pca = ServoKit(channels=16)
 
     return pca
 
@@ -37,7 +37,7 @@ Outputs
 pca  :  double  :  handle for the pca motor controller
 ==========================================================================
 """
-def pca_init(void):
+def pca_init():
 
     pca = get_pca_handle()
 
