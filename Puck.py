@@ -1,8 +1,8 @@
 import time
 import Servo_Utility as SU
 import Parameters as P
-import RPi.GPIO as GPIO
-#import Ultrasonic_Utility as UU
+#import RPi.GPIO as GPIO
+import Ultrasonic_Utility as UU
 
 from adafruit_servokit import ServoKit
 
@@ -12,7 +12,7 @@ def setup():
 
     pca = SU.get_pca_handle()
     print("here we go!!!")
-    #UU.ultrasonic_init()
+    UU.ultrasonic_init()
 
 def driveForward():
     SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
