@@ -1,6 +1,7 @@
 import time
 import Servo_Utility as SU
 import Parameters as P
+import Ultrasonic_Utility as UU
 
 from adafruit_servokit import ServoKit
 
@@ -30,6 +31,9 @@ if __name__ == "__main__":
     setup()
 
     while True:
+
+        distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[0])
+        """
         driveForward()
         time.sleep(3)
         driveBackward()
@@ -40,3 +44,4 @@ if __name__ == "__main__":
         time.sleep(3)
         stopMotors()
         time.sleep(3)
+        """
