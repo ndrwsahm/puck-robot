@@ -2,7 +2,6 @@ import time
 from adafruit_servokit import ServoKit
 
 import Parameters as P
-import Rewrite_Parameter as RP
 
 """
 ==========================================================================
