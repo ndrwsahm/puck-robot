@@ -52,7 +52,7 @@ def ultrasonic_distance(ultrasonic_sensor):
     time.sleep(0.00001)
 
     GPIO.output(ultrasonic_sensor[P.TRIGGER], False)
-
+    print("Sent Trigger")
     start_time = time.time()
     stop_time = time.time()
 
@@ -63,6 +63,8 @@ def ultrasonic_distance(ultrasonic_sensor):
     # save time of arrival
     while GPIO.input(ultrasonic_sensor[P.ECHO]) == 1:
         stop_time = time.time()
+
+    print("Here")
 
     elapased_time = stop_time - start_time
     distance = (elapased_time * 34300) / 2

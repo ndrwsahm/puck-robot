@@ -34,6 +34,9 @@ if __name__ == "__main__":
     while True:
 
         distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[0])
+        print(distance)
+
+        time.sleep(1)
         """
         driveForward()
         time.sleep(3)
