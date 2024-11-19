@@ -1,6 +1,5 @@
 import time
 import Servo_Utility as SU
-import Rewrite_Parameter as RP
 import Parameters as P
 
 def setup():
