@@ -1,7 +1,7 @@
 import time
 import Servo_Utility as SU
 import Parameters as P
-import Ultrasonic_Utility as UU
+#import Ultrasonic_Utility as UU
 
 from adafruit_servokit import ServoKit
 
@@ -11,7 +11,7 @@ def setup():
 
     pca = SU.get_pca_handle()
     print("here we go!!!")
-    UU.ultrasonic_init()
+    #UU.ultrasonic_init()
 
 def driveForward():
     SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
@@ -38,6 +38,7 @@ if __name__ == "__main__":
         #print(distance)
 
         time.sleep(1)
+        print("you are in a loop")
         """
         driveForward()
         time.sleep(3)
