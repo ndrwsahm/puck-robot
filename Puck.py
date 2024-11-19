@@ -39,8 +39,8 @@ if __name__ == "__main__":
         right_front_distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[P.FRONT_RIGHT])
         print("Right Front Distance: ", right_front_distance)
 
-        #left_back_distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[P.BACK_LEFT])
-        #print("Left Back Distance: ", left_back_distance)
+        left_back_distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[P.BACK_LEFT])
+        print("Left Back Distance: ", left_back_distance)
 
         right_back_distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[P.BACK_RIGHT])
         print("Right Back Distance: ", right_back_distance)
