@@ -10,6 +10,7 @@ def setup():
     global pca
 
     pca = SU.get_pca_handle()
+    print("here we go!!!")
     UU.ultrasonic_init()
 
 def driveForward():
