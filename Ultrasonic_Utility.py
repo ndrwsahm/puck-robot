@@ -47,6 +47,8 @@ pca  :  object  :  object for the pca motor controller
 ==========================================================================
 """
 def ultrasonic_distance(ultrasonic_sensor):
+    print("ultrasonic here")
+    print(ultrasonic_sensor)
     GPIO.output(ultrasonic_sensor[P.TRIGGER], True)
 
     time.sleep(0.00001)
