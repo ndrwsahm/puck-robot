@@ -10,6 +10,7 @@ def setup():
     global pca
 
     pca = SU.get_pca_handle()
+    UU.ultrasonic_init()
 
 def driveForward():
     SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
