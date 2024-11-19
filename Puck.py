@@ -33,11 +33,11 @@ if __name__ == "__main__":
 
     while True:
 
-        #distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[0])
-        #print(distance)
+        distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[0])
+        print(distance)
 
-        #time.sleep(1)
-        
+        time.sleep(1)
+        """
         driveForward()
         time.sleep(3)
         driveBackward()
@@ -48,4 +48,5 @@ if __name__ == "__main__":
         time.sleep(3)
         stopMotors()
         time.sleep(3)
+        """
     
