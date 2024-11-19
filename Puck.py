@@ -16,12 +16,12 @@ if __name__ == "__main__":
        # pca.servo[P.LEFT_MOTOR_PIN].angle = 180
         pca.servo[P.RIGHT_MOTOR_PIN].angle = 180
         #pca.continuous_servo[P.LEFT_MOTOR_PIN].throttle = 1
-        pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = 1
+        #pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = 1
         time.sleep(1)
         #pca.continuous_servo[P.LEFT_MOTOR_PIN].throttle = -1
-        pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = -1
+        #pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = -1
         time.sleep(1)
         #pca.servo[P.LEFT_MOTOR_PIN].angle = 0
         pca.servo[P.RIGHT_MOTOR_PIN].angle = 0
         #pca.continuous_servo[P.LEFT_MOTOR_PIN].throttle = 0
-        pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = 0
+        #pca.continuous_servo[P.RIGHT_MOTOR_PIN].throttle = 0
