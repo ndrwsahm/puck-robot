@@ -10,20 +10,20 @@ def setup():
 
     pca = SU.get_pca_handle()
 
-def turnLeft():
+def driveForward():
+    SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
+ 
+def driveBackward():
+    SU.pca_driveMotors(pca, P.FORWARD, P.BACKWARD)
+   
+def turnRight():
     SU.pca_driveMotors(pca, P.FORWARD, P.FORWARD)
 
-def turnRight():
+def turnLeft():
     SU.pca_driveMotors(pca, P.BACKWARD, P.BACKWARD)
 
 def stopMotors():
     SU.pca_driveMotors(pca, P.STOP, P.STOP)
-
-def driveBackward():
-    SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
-
-def driveForward():
-    SU.pca_driveMotors(pca, P.FORWARD, P.BACKWARD)
     
 if __name__ == "__main__":
 
