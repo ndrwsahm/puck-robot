@@ -6,7 +6,7 @@ def setup():
 
     global pca
 
-    pca = SU.pca_init()
+    pca = SU.get_pca_handle()
     
 if __name__ == "__main__":
 
