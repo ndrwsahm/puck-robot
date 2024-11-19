@@ -18,17 +18,13 @@ pca  :  object  :  object for the pca motor controller
 """
 def ultrasonic_init():
 
-    print("just starting")
     GPIO.setmode(GPIO.BCM)
-    print("at least got here")
 
     # Set triggers as outputs
     GPIO.setup(P.FRONT_LEFT_TRIGGER_PIN, GPIO.OUT)
     GPIO.setup(P.FRONT_RIGHT_TRIGGER_PIN, GPIO.OUT)
     GPIO.setup(P.BACK_LEFT_TRIGGER_PIN, GPIO.OUT)
     GPIO.setup(P.BACK_RIGHT_TRIGGER_PIN, GPIO.OUT)
-
-    print("looks like we suck")
 
     # Set echos as inputs
     GPIO.setup(P.FRONT_LEFT_ECHO_PIN, GPIO.IN)

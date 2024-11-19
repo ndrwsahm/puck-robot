@@ -1,7 +1,6 @@
 import time
 import Servo_Utility as SU
 import Parameters as P
-#import RPi.GPIO as GPIO
 import Ultrasonic_Utility as UU
 
 from adafruit_servokit import ServoKit
@@ -11,7 +10,6 @@ def setup():
     global pca
 
     pca = SU.get_pca_handle()
-    print("here we go!!!")
     UU.ultrasonic_init()
 
 def driveForward():
@@ -35,8 +33,8 @@ if __name__ == "__main__":
 
     while True:
 
-        #distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[0])
-        #print(distance)
+        distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[0])
+        print(distance)
 
         time.sleep(1)
         print("you are in a loop")
