@@ -9,19 +9,34 @@ def setup():
     global pca
 
     pca = SU.get_pca_handle()
+
+def driveForward():
+    SU.pca_driveMotors(pca, P.FORWARD, P.FORWARD)
+
+def driveBackward():
+    SU.pca_driveMotors(pca, P.BACKWARD, P.BACKWARD)
+
+def stopMotors():
+    SU.pca_driveMotors(pca, P.STOP, P.STOP)
+
+def turnLeft():
+    SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
+
+def turnRight():
+    SU.pca_driveMotors(pca, P.FORWARD, P.BACKWARD)
     
 if __name__ == "__main__":
 
     setup()
 
     while True:
-        SU.pca_driveMotors(pca, P.FORWARD, P.FORWARD)
+        driveForward()
         time.sleep(3)
-        SU.pca_driveMotors(pca, P.BACKWARD, P.BACKWARD)
+        driveBackward()
         time.sleep(3)
-        SU.pca_driveMotors(pca, P.FORWARD, P.BACKWARD)
+        turnRight()
         time.sleep(3)
-        SU.pca_driveMotors(pca, P.BACKWARD, P.FORWARD)
+        turnLeft()
         time.sleep(3)
-        SU.pca_driveMotors(pca, P.STOP, P.STOP)
+        stopMotors()
         time.sleep(3)
