@@ -8,8 +8,8 @@ General settings module for puck-robot.
 """
 
 # Servo Pins for the individual legs
-LEFT_MOTOR_PIN = 0
-RIGHT_MOTOR_PIN = 1
+LEFT_MOTOR_PIN = 2
+RIGHT_MOTOR_PIN = 3
 
 FRONT_LEFT_TRIGGER_PIN = 26
 FRONT_RIGHT_TRIGGER_PIN = 19
