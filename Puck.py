@@ -32,7 +32,7 @@ if __name__ == "__main__":
     setup()
 
     while True:
-
+        """
         left_front_distance = UU.ultrasonic_distance(P.ULTRASONIC_SENSORS[P.FRONT_LEFT])
         print("Left Front Distance: ", left_front_distance)
 
@@ -46,8 +46,8 @@ if __name__ == "__main__":
         print("Right Back Distance: ", right_back_distance)
 
         time.sleep(1)
-
         """
+        
         driveForward()
         time.sleep(3)
         driveBackward()
@@ -58,5 +58,5 @@ if __name__ == "__main__":
         time.sleep(3)
         stopMotors()
         time.sleep(3)
-        """
+        
     
